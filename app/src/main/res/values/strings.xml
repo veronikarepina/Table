@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">Table</string>
+    <string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
+    <string name="three" translatable="false">3</string>
+    <string name="four" translatable="false">4</string>
+    <string name="five" translatable="false">5</string>
+    <string name="six" translatable="false">6</string>
+    <string name="seven" translatable="false">7</string>
+    <string name="pointsSum">Sum of points</string>
+    <string name="position">Position</string>
+    <string name="empty" translatable="false">  </string>
+    <string name="participant1">Participant 1</string>
+    <string name="participant2">Participant 2</string>
+    <string name="participant3">Participant 3</string>
+    <string name="participant4">Participant 4</string>
+    <string name="participant5">Participant 5</string>
+    <string name="participant6">Participant 6</string>
+    <string name="participant7">Participant 7</string>
+    <string name="error">Valid values - from 0 to 5!</string>
+</resources>

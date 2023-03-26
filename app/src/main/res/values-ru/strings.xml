@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pointsSum">Сумма очков</string>
+    <string name="position">Место</string>
+    <string name="participant1">Участник 1</string>
+    <string name="participant2">Участник 2</string>
+    <string name="participant3">Участник 3</string>
+    <string name="participant4">Участник 4</string>
+    <string name="participant5">Участник 5</string>
+    <string name="participant6">Участник 6</string>
+    <string name="participant7">Участник 7</string>
+    <string name="error">Допустимые значения - от 0 до 5!</string>
+</resources>
