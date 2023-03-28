@@ -2,6 +2,7 @@
 <resources>
     <string name="pointsSum">Сумма очков</string>
     <string name="position">Место</string>
+    <string name="name">Участник</string>
     <string name="participant1">Участник 1</string>
     <string name="participant2">Участник 2</string>
     <string name="participant3">Участник 3</string>

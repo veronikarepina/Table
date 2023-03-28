@@ -10,6 +10,7 @@
     <string name="pointsSum">Sum of points</string>
     <string name="position">Position</string>
     <string name="empty" translatable="false">  </string>
+    <string name="name">Participant</string>
     <string name="participant1">Participant 1</string>
     <string name="participant2">Participant 2</string>
     <string name="participant3">Participant 3</string>
