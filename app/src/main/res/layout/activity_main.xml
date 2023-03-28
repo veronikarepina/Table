@@ -6,8 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".presentation.MainActivity">
 
-    <TableLayout
-        android:id="@+id/tableLayout"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -17,100 +18,83 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="4" />
 
-            <TextView
-                android:id="@+id/name"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4" />
+        <TextView
+            android:id="@+id/participantNumber"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/empty" />
 
-            <TextView
-                android:id="@+id/participantNumber"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/empty" />
+        <TextView
+            android:id="@+id/field1"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/one" />
 
-            <TextView
-                android:id="@+id/field1"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/one" />
+        <TextView
+            android:id="@+id/field2"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/two" />
 
-            <TextView
-                android:id="@+id/field2"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/two" />
+        <TextView
+            android:id="@+id/field3"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/three" />
 
-            <TextView
-                android:id="@+id/field3"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/three" />
+        <TextView
+            android:id="@+id/field4"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/four" />
 
-            <TextView
-                android:id="@+id/field4"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/four" />
+        <TextView
+            android:id="@+id/field5"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/five" />
 
-            <TextView
-                android:id="@+id/field5"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/five" />
+        <TextView
+            android:id="@+id/field6"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/six" />
 
-            <TextView
-                android:id="@+id/field6"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/six" />
+        <TextView
+            android:id="@+id/field7"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/seven" />
 
-            <TextView
-                android:id="@+id/field7"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/seven" />
+        <TextView
+            android:id="@+id/score"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:text="@string/pointsSum" />
 
-            <TextView
-                android:id="@+id/score"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:text="@string/pointsSum" />
+        <TextView
+            android:id="@+id/position"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:text="@string/position" />
 
-            <TextView
-                android:id="@+id/position"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:text="@string/position" />
-
-        </TableRow>
-
-    </TableLayout>
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
@@ -121,6 +105,6 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:listitem="@layout/table_row" />
 </androidx.constraintlayout.widget.ConstraintLayout>

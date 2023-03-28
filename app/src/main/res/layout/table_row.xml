@@ -1,111 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            tools:text="Участник 1" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/participantNumber"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            tools:text="1" />
 
-            <TextView
-                android:id="@+id/name"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                tools:text="Участинк 1"
-                android:layout_height="wrap_content"
-                android:layout_weight="4" />
+        <EditText
+            android:id="@+id/field1"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusDown="@id/field2" />
 
-            <TextView
-                android:id="@+id/participantNumber"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                tools:text="1"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+        <EditText
+            android:id="@+id/field2"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusDown="@id/field3" />
 
-            <EditText
-                android:id="@+id/field1"
-                style="@style/EditTextStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:maxLength="1" />
+        <EditText
+            android:id="@+id/field3"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusDown="@id/field4" />
 
-            <EditText
-                android:id="@+id/field2"
-                style="@style/EditTextStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:maxLength="1" />
+        <EditText
+            android:id="@+id/field4"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusDown="@id/field5" />
 
-            <EditText
-                android:id="@+id/field3"
-                style="@style/EditTextStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:maxLength="1" />
+        <EditText
+            android:id="@+id/field5"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusDown="@id/field6" />
 
-            <EditText
-                android:id="@+id/field4"
-                style="@style/EditTextStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:maxLength="1" />
+        <EditText
+            android:id="@+id/field6"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusDown="@id/field7" />
 
-            <EditText
-                android:id="@+id/field5"
-                style="@style/EditTextStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:maxLength="1" />
+        <EditText
+            android:id="@+id/field7"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusDown="@id/field1" />
 
-            <EditText
-                android:id="@+id/field6"
-                style="@style/EditTextStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:maxLength="1" />
+        <TextView
+            android:id="@+id/score"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="4" />
 
-            <EditText
-                android:id="@+id/field7"
-                style="@style/EditTextStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:maxLength="1"/>
+        <TextView
+            android:id="@+id/position"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="4" />
 
-            <TextView
-                android:id="@+id/score"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4" />
-
-            <TextView
-                android:id="@+id/position"
-                style="@style/TextViewStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4" />
-
-        </TableRow>
-
-    </TableLayout>
-</FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
